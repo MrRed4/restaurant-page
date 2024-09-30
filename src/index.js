@@ -16,6 +16,13 @@ function newActiveTab(newTab) {
     oldTab.classList.remove('active')
     newTab.classList.add('active')
     document.querySelector('#content').innerHTML = ''
+    createHeader()
+}
+
+function createHeader() {
+    const header = document.createElement('h1')
+    header.textContent = 'The Opulenza'
+    document.querySelector('#content').appendChild(header)
 }
 
 export { newActiveTab }
