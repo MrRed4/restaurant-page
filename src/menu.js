@@ -4,6 +4,7 @@ const currentTab = document.querySelector('#menu')
 const container = document.querySelector('#content')
 const subheader = document.createElement('h3')
 const menu = document.createElement('div')
+
 menu.classList = 'menu'
 subheader.textContent = 'Menu'
 
